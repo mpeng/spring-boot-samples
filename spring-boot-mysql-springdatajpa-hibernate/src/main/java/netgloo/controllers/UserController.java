@@ -2,6 +2,7 @@ package netgloo.controllers;
 
 import netgloo.models.User;
 import netgloo.models.UserDao;
+import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,9 +17,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class UserController {
 
+  private static final Logger log = Logger.getLogger(UserController.class.getName());
   // ------------------------
   // PUBLIC METHODS
   // ------------------------
+
   
   /**
    * /create  --> Create a new user and save it in the database.
