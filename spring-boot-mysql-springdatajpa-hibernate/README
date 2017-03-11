@@ -1,0 +1,9 @@
+http://localhost:8080/create?email=john@gmail.com&name=john
+
+http://localhost:8080/create?email=john@gmail.com&name=john  : create a new user with an auto-generated id and email and name as passed values.
+http://localhost:8080/delete?id=1: delete the user with the passed id.
+http://localhost:8080/get-by-email?email=jane@gmail.com: retrieve the id for the user with the passed email address.
+http://localhost:8080/update?id=1&email=jane@gmail.com&name=jane: update the email and the name for the user indentified by the passed id.
+
+http://localhost:8080/services/users/getAllUsers
+http://localhost:8080/services/users/1
