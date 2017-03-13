@@ -7,3 +7,55 @@ http://localhost:8080/update?id=1&email=jane@gmail.com&name=jane: update the ema
 
 http://localhost:8080/services/users/getAllUsers
 http://localhost:8080/services/users/1
+
+
+
+https://node-141412.appspot.com/
+https://node-141412.appspot.com/create?email=john@gmail.com&name=john
+https://node-141412.appspot.com/health
+
+http://node-141412.appspot.com/create?email=jane@gmail.com&name=jane  : create a new user with an auto-generated id and email and name as passed values.
+http://node-141412.appspot.com/delete?id=1: delete the user with the passed id.
+http://node-141412.appspot.com/get-by-email?email=jane@gmail.com: retrieve the id for the user with the passed email address.
+http://node-141412.appspot.com/update?id=1&email=jane@gmail.com&name=jane: update the email and the name for the user indentified by the passed id.
+
+http://node-141412.appspot.com/services/users/getAllUsers
+http://node-141412.appspot.com/services/users/1
+
+
+
+
+This shows how to deploy it to Google App Engine Free/Google Compute Engine Flex Environment
+
+https://github.com/GoogleCloudPlatform/getting-started-java/tree/master/helloworld-springboot
+
+1. Just Open a new Google Cloud SDK Shell,
+2. enter gcloug init
+3. select 1
+
+To create a MySQL data store:
+
+https://console.cloud.google.com/getting-started?project=node-141412
+
+https://cloud.google.com/appengine/docs/flexible/java/using-cloud-sql
+
+gcloud beta sql users set-password root % --instance node-141412:us-east1:dispatch --password Ilove$cancun1
+
+Open a Cloud Shell
+Step 1: D:\Tools>gcloud config set project node-141412
+Step 2: D:\Tools>gcloud sql instances describe dispatch
+
+Remember Enable the API for instance
+To debug any issue:
+1. Restart the instance and watch log,
+2. Search term "Caused by" or ""
+
+gcloud sql instances describe node-141412:us-east1:dispatch
+
+gcloud beta sql users create [USER_NAME] [HOST] \
+      --instance=[INSTANCE_NAME] --password=[PASSWORD]
+Create a database on your Cloud SQL instance named sqldemo.
+
+gcloud beta sql databases create sqldemo --instance=[INSTANCE_NAME]
+
+
