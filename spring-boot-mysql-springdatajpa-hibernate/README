@@ -22,6 +22,10 @@ http://node-141412.appspot.com/update?id=1&email=jane@gmail.com&name=jane: updat
 http://node-141412.appspot.com/services/users/getAllUsers
 http://node-141412.appspot.com/services/users/1
 
+http://node.theoptionslab.net/services/users/getAllUsers
+http://node.theoptionslab.net/services/users/1
+http://app.theoptionslab.net/services/users/getAllUsers
+http://app.theoptionslab.net/services/users/1
 
 
 
@@ -44,6 +48,11 @@ gcloud beta sql users set-password root % --instance node-141412:us-east1:dispat
 Open a Cloud Shell
 Step 1: D:\Tools>gcloud config set project node-141412
 Step 2: D:\Tools>gcloud sql instances describe dispatch
+
+Point DB to Google CLoud SQL
+Open a Google CLoud SDK Shell ( GCSS )
+Run mvn spring-boot:run to deploy and test it locally
+Run mvn appengine:deploy to deploy and test it in GAE.
 
 Remember Enable the API for instance
 To debug any issue:
