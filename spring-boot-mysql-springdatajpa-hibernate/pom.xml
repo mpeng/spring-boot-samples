@@ -45,13 +45,13 @@
       <version>6.0.5</version>
     </dependency>
     <!-- add this when deploy locally -->
-    <!--
+
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>5.1.10</version>
     </dependency>
-    -->
+
     <!-- https://mvnrepository.com/artifact/com.google.cloud.sql/mysql-socket-factory -->
     <dependency>
       <groupId>com.google.cloud.sql</groupId>
